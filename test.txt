@@ -1,0 +1,8 @@
+Here is the git command
+
+git config -> for the git config
+git config list -> for the see all the git config
+
+git init -> for the inisialization git
+git status -> for the see git status
+git add . -> for the add all files in th
