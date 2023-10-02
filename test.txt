@@ -14,3 +14,27 @@ git diff -> for the difarence all files in the git
 
 git checkout <id> -> for the version control;
 git checkout master -> for the previous version;
+
+-----> Setup the SSH connection <------
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -> for the generated ssh key
+cat ~/.ssh/id_rsa.pub --> for get generated ssh key
+
+-----> Push Code in github <------
+git remote -v --> check git connected or not connected with github
+git remote add origin <github link> --> for connection with guthub
+git push -u origin main --> for push 1st time code on github
+git push --> for everytime push
+
+-----> Pull code from github to git <--------
+git pull origin main --> for first time pull
+git pull --> for everytime pull
+
+-----> All About Brance <------
+git brance --> for check how meny brance on git
+git brance -r --> for check how meny brance on github
+git brance -a --> for check how meny brance on github and git
+git brance <name> --> create new brance
+git checkout <Brance Name> --> for change warking brance
+git merge <Brance Name> --> for marge all with main brance
+git brance -d --> For delete corent brance
+git push -u origin <Brance Name> --> for push on those brance
