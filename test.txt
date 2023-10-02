@@ -11,3 +11,6 @@ git commit -> for the commit all files in the git
 git log -> for the log all files in the git
 git log --oneline -> for the single line log all files in the git
 git diff -> for the difarence all files in the git
+
+git checkout <id> -> for the version control;
+git checkout master -> for the previous version
