@@ -1,40 +1,50 @@
-Here is the git command
+**Git Configuration:**
+- `git config`: This command is used to configure Git settings.
+- `git config --list`: This command is used to view all Git configurations.
 
-git config -> for the git config
-git config list -> for the see all the git config
+**Initialization:**
+- `git init`: Initializes a new Git repository in the current directory.
 
-git init -> for the inisialization git
-git status -> for the see git status
-git add . -> for the add all files in the git
-git commit -> for the commit all files in the git
+**Checking Status:**
+- `git status`: Shows the status of your working directory, indicating which files are staged, modified, or untracked.
 
-git log -> for the log all files in the git
-git log --oneline -> for the single line log all files in the git
-git diff -> for the difarence all files in the git
+**Staging Changes:**
+- `git add .` (or `git add -A`): Stages all changes in the current directory for the next commit.
 
-git checkout <id> -> for the version control;
-git checkout master -> for the previous version;
+**Committing Changes:**
+- `git commit -m "Your commit message"`: Commits the staged changes with a descriptive message.
 
------> Setup the SSH connection <------
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -> for the generated ssh key
-cat ~/.ssh/id_rsa.pub --> for get generated ssh key
+**Viewing Commit History:**
+- `git log`: Displays a log of all commits in the repository.
+- `git log --oneline`: Displays a simplified one-line log of all commits.
 
------> Push Code in github <------
-git remote -v --> check git connected or not connected with github
-git remote add origin <github link> --> for connection with guthub
-git push -u origin main --> for push 1st time code on github
-git push --> for everytime push
+**Viewing Differences:**
+- `git diff`: Shows the differences between the working directory and the last commit.
 
------> Pull code from github to git <--------
-git pull origin main --> for first time pull
-git pull --> for everytime pull
+**Switching Branches:**
+- `git checkout <branch_name>`: Switches to the specified branch.
+- `git checkout master`: Switches to the master branch (or the main branch).
 
------> All About Brance <------
-git brance --> for check how meny brance on git
-git brance -r --> for check how meny brance on github
-git brance -a --> for check how meny brance on github and git
-git brance <name> --> create new brance
-git checkout <Brance Name> --> for change warking brance
-git merge <Brance Name> --> for marge all with main brance
-git brance -d --> For delete corent brance
-git push -u origin <Brance Name> --> for push on those brance
+**SSH Key Generation:**
+- To generate an SSH key: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+- To display the generated public key: `cat ~/.ssh/id_rsa.pub`
+
+**Pushing Code to GitHub:**
+- Checking remote repositories: `git remote -v`
+- Adding a remote repository: `git remote add origin <github_repository_url>`
+- Pushing to the main branch: `git push -u origin main`
+- Subsequent pushes to the main branch: `git push`
+
+**Pulling Code from GitHub:**
+- Pulling from the main branch: `git pull origin main`
+- Subsequent pulls: `git pull`
+
+**Branch Operations:**
+- `git branch`: Lists all local branches.
+- `git branch -r`: Lists all remote branches.
+- `git branch -a`: Lists all branches, both local and remote.
+- `git branch <branch_name>`: Creates a new branch with the specified name.
+- `git checkout <branch_name>`: Switches to the specified branch.
+- `git merge <branch_name>`: Merges changes from the specified branch into the current branch.
+- `git branch -d <branch_name>`: Deletes the specified local branch.
+- `git push -u origin <branch_name>`: Pushes changes to the specified branch on GitHub.
