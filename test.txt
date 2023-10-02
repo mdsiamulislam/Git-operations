@@ -5,4 +5,9 @@ git config list -> for the see all the git config
 
 git init -> for the inisialization git
 git status -> for the see git status
-git add . -> for the add all files in th
+git add . -> for the add all files in the git
+git commit -> for the commit all files in the git
+
+git log -> for the log all files in the git
+git log --oneline -> for the single line log all files in the git
+git diff -> for the difarence all files in the git
