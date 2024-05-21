@@ -86,3 +86,14 @@ gitignor use for to ensure that certain files not tracked by Git remain untracke
 - | Use ` | Text | Text |
   | ----- | ---- | ---- | ----------- |
   | One   | two  |      | ` For table |
+
+
+
+##Git visualization
+
+|Working directory | Staging Area | Local Repo | Remote repo|
+|------------------|--------------|------------|------------|
+|it status| | | |
+|git add|git com |git push | |
+|git diff|git reset -soft commit | | |
+  
