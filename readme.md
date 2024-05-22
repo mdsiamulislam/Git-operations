@@ -1,4 +1,8 @@
-**Git Configuration:**
+**Git Version Check:**
+
+- `git --version`: This command is used to check git version.
+-
+- **Git Configuration:**
 
 - `git config`: This command is used to configure Git settings.
 - `git config --list`: This command is used to view all Git configurations.
@@ -31,6 +35,9 @@
 ** Undo commit **
 `git reset -soft commit ` : Uncomitted or Local Repository to back Staging area (back one by one commit)
 `git reset -hard commit ` : Uncomitted or Local Repository to back Staging area (back hearder)
+`git restore <file> ` : Back to unchanged file
+`git restore <directory> ` : Back to unchanged directory
+`git restore  ` : If you go to alreay staging area you can undo with this
 
 **Switching Branches:**
 
@@ -54,6 +61,10 @@
 - Pulling from the main branch: `git pull origin main`
 - Subsequent pulls: `git pull`
 
+**Git Clone From GitHub :**
+
+- For clone a repository github to your computer: `git clone <repository name>`
+
 **Branch Operations:**
 
 - `git branch`: Lists all local branches.
@@ -66,6 +77,24 @@
 - `git merge feature`: Merges changes three way.
 - `git branch -d <branch_name>`: Deletes the specified local branch.
 - `git push -u origin <branch_name>`: Pushes changes to the specified branch on GitHub.
+
+**Branch stash:**
+
+- `git stash`: New commited work hide from workspace.
+- `git stash pop`: Get last stash work and delete from stash
+- `git stash apply`: Get last stash work without delete from stash
+- `git stash list`: See how many stash you have with stash@{n} type id
+- `git stash pop stash@{3} / git stash apply stash@{1}`: Get spesific stash
+- `git stash clear`: Clear tash
+- `git stash drop stash@{n}`: Clear spasific tash
+- `git stash -u`:
+
+** Git reset **
+- `git reset <commit_id>`: Delete commit
+- `git reset <commit_id> --hard`: Delete commit
+- `git revert <commit_id>`
+- `git rebase main`
+- `git merge new-feature --squash`
 
 **Gitignor**
 gitignor use for to ensure that certain files not tracked by Git remain untracked.
